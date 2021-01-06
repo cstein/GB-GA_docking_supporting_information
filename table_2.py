@@ -47,6 +47,7 @@ if __name__ == '__main__':
                  np.size(np.where(zinc_2cht_data < -10))]
 
     cnt_2cht_sp = [compute_num_mols_better("2CHT", s, erg_sp_2cht, mode="sp") for s in [""]] + [""]*8
+
     cnt_2rh1 = [compute_num_mols_better("2RH1", s, erg_htvs_2rh1) for s in KEYS]
     cnt_2rh1 += [compute_num_mols_better("2RH1", "_filter_sa_norm", -9),
                  compute_num_mols_better("2RH1", "_filter_sa_norm", -10)]

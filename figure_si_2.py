@@ -1,18 +1,15 @@
 import json
 import os
-import math
 
 import matplotlib.pyplot as plt
 import cairosvg
-import pandas as pd
 
-from rdkit.Chem.Draw import rdMolDraw2D
 from rdkit import Chem
 from rdkit import DataStructs
 from rdkit.Chem import AllChem
 
 import neutralize
-from util import top_n_score_smiles_as_frame, smiles_to_molecule
+from util import top_n_score_smiles_as_frame, smiles_to_molecule, show_mols
 
 
 def get_ECFP4(mol):
@@ -40,20 +37,6 @@ def molecule_one_results(filename):
             return json.load(dat_file)
     else:
         raise FileNotFoundError(f"Could not find the file {filename}")
-
-
-def show_mols(mols, filename, mols_per_row = 5, size=200, min_font_size=12, legends=[]):
-  rows = math.ceil(len(mols)/mols_per_row)
-  d2d = rdMolDraw2D.MolDraw2DSVG(mols_per_row*size,rows*size,size,size)
-  d2d.drawOptions().minFontSize = min_font_size
-  if legends:
-    d2d.DrawMolecules(mols, legends=legends)
-  else:
-    d2d.DrawMolecules(mols)
-  d2d.FinishDrawing()
-
-  with open(filename, 'w') as f:
-    f.write(d2d.GetDrawingText())
 
 
 if __name__ == '__main__':

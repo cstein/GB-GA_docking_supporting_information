@@ -1,10 +1,12 @@
 import csv
+import math
 import zipfile
 
 import pandas as pd
 import numpy as np
 
 from rdkit import Chem
+from rdkit.Chem.Draw import rdMolDraw2D
 
 
 def smiles_to_molecule(s):
@@ -77,3 +79,16 @@ def load_zinc_scores(filename):
     result = {'data': data, 'idx_min': imin, 'val_min':  vmin, 'failed': n_failed, 'noposes': n_noposes}
     return result
 
+
+def show_mols(mols, filename, mols_per_row = 5, size=200, min_font_size=12, legends=[]):
+  rows = math.ceil(len(mols)/mols_per_row)
+  d2d = rdMolDraw2D.MolDraw2DSVG(mols_per_row*size,rows*size,size,size)
+  d2d.drawOptions().minFontSize = min_font_size
+  if legends:
+    d2d.DrawMolecules(mols, legends=legends)
+  else:
+    d2d.DrawMolecules(mols)
+  d2d.FinishDrawing()
+
+  with open(filename, 'w') as f:
+    f.write(d2d.GetDrawingText())

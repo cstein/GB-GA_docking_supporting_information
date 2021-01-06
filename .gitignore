@@ -128,5 +128,6 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-# .png figures
+# .png and .svg figures
 *.png
+*.svg
