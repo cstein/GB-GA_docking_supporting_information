@@ -1,0 +1,15 @@
+Host,Molecule,SMILES,Qmol,htvs_ds,sp_ds
+2CHT,TSA,[O-]C(=O)[C@@]12C=C[C@@H](O)[C@@H](C1)O[C@@H](C2)C([O-])=O,-2,-7.53801,-8.06058
+2CHT,Chorismate,[O-]C(=O)C(=C)Oc(c1O)cc(C(=O)[O-])cc1,-2,-5.43116,-6.63487
+2RH1,Carazolol,CC(C)NC[C@@H](O)COc1cccc(c12)[nH]c3c2cccc3,0,-6.79722,
+2RH1,Pindolol,CC(C)NC[C@@H](O)COc1cccc(c12)[nH]cc2,0,-6.11396,
+2RH1,Propranolol,CC(C)NC[C@@H](O)COc1cccc(c12)cccc2,0,-7.28421,
+2RH1,Adrenalin,Oc1ccc(cc1O)[C@@H](O)CNC,0,-5.19875,
+2RH1,Isoproterenol,Oc1ccc(cc1O)[C@@H](O)CNC(C)C,0,-5.37169,
+2RH1,Salibutamol,Oc1ccc(cc1O)[C@@H](O)CNC(C)(C)C,0,-5.54316,
+3ZOS,Ponatinib,n1cccc(n12)ncc2C#Cc3c(C)ccc(c3)C(=O)Nc4ccc(c(c4)C(F)(F)F)CN5CCN(C)CC5,0,-14.0115,
+3ZOS,Ponatinib,n1cccc(n12)ncc2C#Cc3c(C)ccc(c3)C(=O)Nc4ccc(c(c4)C(F)(F)F)CN5CC[NH+](C)CC5,+1,-6.86596,
+3ZOS,Ponatinib,n1cccc(n12)ncc2C#Cc3c(C)ccc(c3)C(=O)Nc4ccc(c(c4)C(F)(F)F)C[NH+]5CCN(C)CC5,+1,,
+3ZOS,Ponatinib,n1cccc(n12)ncc2C#Cc3c(C)ccc(c3)C(=O)Nc4ccc(c(c4)C(F)(F)F)C[N@@H+]5CC[N@@H+](C)CC5,+2,-12.494,
+BCD,"2,6-ANS",O=S(=O)([O-])c(c1)ccc(c12)cc(cc2)Nc3ccccc3,-1,-4.39,
+BCD,Cholesterol,C1C[C@@H](O)CC([C@]12C)=CC[C@@H]3[C@@H]2CC[C@@]4(C)[C@H]3CC[C@@H]4[C@H](C)CCCC(C)C,0,-3.48,
