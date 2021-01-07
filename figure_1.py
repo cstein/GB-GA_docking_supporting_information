@@ -25,4 +25,3 @@ if __name__ == '__main__':
 
     show_mols(molecules, "figure_1.svg", legends=legends, mols_per_row=4)
     cairosvg.svg2png(url="figure_1.svg", write_to="figure_1.png")
-    
