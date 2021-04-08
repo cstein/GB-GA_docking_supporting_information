@@ -85,7 +85,7 @@ if __name__ == '__main__':
     ax.legend(loc='upper left', fontsize=14)
     ax.set_ylim((0, 10.2))
     ax.set_xlim((-13, -6))
-    ax.set_xlabel("Docking Score", fontsize=14)
+    ax.set_xlabel("Docking Score [kcal/mol]", fontsize=14)
     ax.set_ylabel("Molecule.one Score", fontsize=14)
     for tick in ax.xaxis.get_major_ticks():
         tick.label.set_fontsize(14)
@@ -96,7 +96,7 @@ if __name__ == '__main__':
 
     # now bx
     bx.set_xlim((-13, -6))
-    bx.set_xlabel("Docking Score", fontsize=14)
+    bx.set_xlabel("Docking Score [kcal/mol]", fontsize=14)
     bx.set_ylabel("Tanimoto Similarity", fontsize=14)
     for tick in bx.xaxis.get_major_ticks():
         tick.label.set_fontsize(14)
