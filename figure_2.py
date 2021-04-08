@@ -104,5 +104,5 @@ if __name__ == '__main__':
         tick.label.set_fontsize(14)
 
     bx.text(0.95, 0.92, "b", transform=bx.transAxes, fontsize=20)
-
+    fig.subplots_adjust(left=0.06, right=0.96)
     fig.savefig('figure_2.png', dpi=72)
